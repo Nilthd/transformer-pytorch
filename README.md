@@ -1,6 +1,6 @@
-# Transformer from Scratch — PyTorch
+# Transformer from Scratch using PyTorch
 
-A clean, fully commented implementation of the **Transformer architecture** built manually in PyTorch — no `nn.Transformer` used — built block by block to show exactly how attention works.
+A clean, fully commented implementation of the **Transformer architecture** built manually in PyTorch, no `nn.Transformer` used, built block by block to show exactly how attention works.
 
 The Transformer is the foundation of modern AI: GPT, BERT, and every large language model builds on this architecture.
 
