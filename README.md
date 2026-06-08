@@ -41,7 +41,16 @@ Average pooling across timesteps
       ↓
 Linear → class prediction
 ```
+## Visual diagrams
 
+### Model progression — RNN → LSTM → Transformer
+![Model progression](docs/model_progression.svg)
+
+### Internal architecture
+![Transformer architecture](docs/transformer_architecture.svg)
+
+### Attention mechanism
+![Attention mechanism](docs/attention_mechanism.svg)
 ## Project Structure
 
 ```
