@@ -1,0 +1,61 @@
+<svg width="100%" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg">
+<style>
+  text { font-family: system-ui, sans-serif; }
+  .th  { font-size:14px; font-weight:500; }
+  .ts  { font-size:12px; }
+</style>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+</marker>
+</defs>
+
+<text class="ts" x="340" y="28" text-anchor="middle" fill="#888">which tokens does "networks" attend to?</text>
+
+<rect x="40"  y="48" width="100" height="40" rx="6" fill="#F1EFE8" stroke="#888" stroke-width="0.5"/>
+<text class="ts" x="90"  y="68" text-anchor="middle" fill="#555">recurrent</text>
+<rect x="160" y="48" width="100" height="40" rx="6" fill="#F1EFE8" stroke="#888" stroke-width="0.5"/>
+<text class="ts" x="210" y="68" text-anchor="middle" fill="#555">neural</text>
+<rect x="280" y="44" width="100" height="48" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="1"/>
+<text class="th" x="330" y="68" text-anchor="middle" fill="#633806">networks</text>
+<rect x="400" y="48" width="100" height="40" rx="6" fill="#F1EFE8" stroke="#888" stroke-width="0.5"/>
+<text class="ts" x="450" y="68" text-anchor="middle" fill="#555">learn</text>
+<rect x="520" y="48" width="120" height="40" rx="6" fill="#F1EFE8" stroke="#888" stroke-width="0.5"/>
+<text class="ts" x="580" y="68" text-anchor="middle" fill="#555">sequences</text>
+
+<line x1="330" y1="92" x2="90"  y2="175" stroke="#EF9F27" stroke-width="1"   opacity="0.20" fill="none"/>
+<line x1="330" y1="92" x2="210" y2="175" stroke="#EF9F27" stroke-width="2"   opacity="0.45" fill="none"/>
+<line x1="330" y1="92" x2="330" y2="175" stroke="#EF9F27" stroke-width="5"   opacity="1.00" fill="none"/>
+<line x1="330" y1="92" x2="450" y2="175" stroke="#EF9F27" stroke-width="3"   opacity="0.65" fill="none"/>
+<line x1="330" y1="92" x2="580" y2="175" stroke="#EF9F27" stroke-width="1.5" opacity="0.35" fill="none"/>
+
+<text class="ts" x="340" y="158" text-anchor="middle" fill="#854F0B">line thickness = attention weight</text>
+
+<rect x="40"  y="180" width="100" height="40" rx="6" fill="#F1EFE8" stroke="#888" stroke-width="0.5"/>
+<text class="ts" x="90"  y="200" text-anchor="middle" fill="#555">recurrent</text>
+<rect x="160" y="180" width="100" height="40" rx="6" fill="#F1EFE8" stroke="#888" stroke-width="0.5"/>
+<text class="ts" x="210" y="200" text-anchor="middle" fill="#555">neural</text>
+<rect x="280" y="180" width="100" height="40" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="1"/>
+<text class="th" x="330" y="200" text-anchor="middle" fill="#633806">networks</text>
+<rect x="400" y="180" width="100" height="40" rx="6" fill="#F1EFE8" stroke="#888" stroke-width="0.5"/>
+<text class="ts" x="450" y="200" text-anchor="middle" fill="#555">learn</text>
+<rect x="520" y="180" width="120" height="40" rx="6" fill="#F1EFE8" stroke="#888" stroke-width="0.5"/>
+<text class="ts" x="580" y="200" text-anchor="middle" fill="#555">sequences</text>
+
+<line x1="340" y1="225" x2="340" y2="258" stroke="#888" stroke-width="1" marker-end="url(#arrow)" fill="none"/>
+
+<rect x="100" y="260" width="480" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text class="th" x="340" y="280" text-anchor="middle" fill="#3C3489">Scaled dot-product attention</text>
+<text class="ts" x="340" y="300" text-anchor="middle" fill="#534AB7">softmax( Q · Kᵀ / √d_k ) · V</text>
+
+<line x1="340" y1="316" x2="340" y2="338" stroke="#888" stroke-width="1" marker-end="url(#arrow)" fill="none"/>
+
+<rect x="100" y="340" width="220" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="th" x="210" y="354" text-anchor="middle" fill="#085041">Q (query)</text>
+<text class="ts" x="210" y="372" text-anchor="middle" fill="#0F6E56">what am I looking for?</text>
+<rect x="340" y="340" width="220" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="th" x="450" y="354" text-anchor="middle" fill="#085041">K (key) · V (value)</text>
+<text class="ts" x="450" y="372" text-anchor="middle" fill="#0F6E56">what do I have / carry?</text>
+
+<text class="ts" x="340" y="410" text-anchor="middle" fill="#888">each head learns different Q/K/V → multi-head attention</text>
+</svg>
