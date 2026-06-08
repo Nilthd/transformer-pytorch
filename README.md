@@ -70,7 +70,7 @@ pip install -r requirements.txt
 # Train on the included sample data
 python transformer.py --data sample_data.csv --target target_class
 
-# Train on YOUR own CSV
+# Train on CSV
 python transformer.py --data your_file.csv --target label_column
 
 # Run demo mode (no CSV needed)
@@ -93,7 +93,7 @@ python transformer.py
 
 ## CSV Format
 
-Your CSV should have feature columns and one target column with class labels (integers or strings):
+ CSV should have feature columns and one target column with class labels (integers or strings):
 
 ```
 feature1, feature2, feature3, ..., target_class
